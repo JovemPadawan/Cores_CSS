@@ -1,0 +1,125 @@
+
+
+header {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    text-align: center;
+    padding: 0px 0px; 
+}
+
+.text {
+    
+    text-align:inherit;
+    color: white;
+    font-size: 25px;
+    font-style: normal;
+    margin: 100px 50px;
+}
+
+
+h1 {
+    text-align:center;
+    /* background-color: rgb(red, green, blue); */
+    color: rgb(255, 255, 255); /*deixou o texto do titulo branco*/   
+    font-style: italic;
+    font-size: 70px;
+    /* position: fixed; */
+}
+
+h2 {
+    text-align: left;
+    color:rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}    
+
+.marker {
+    width: 200px; /*tamanho lateral dos cilindros */
+    height: 25px; /*espessura dos cilindros*/
+    margin: 10px auto;
+   
+}
+
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(15, 15, 15, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap, .sleeve {
+    display: inline-block;
+}
+
+
+/* TENTATIVA MARCADORES DE LIVROS FIM */
+/* Os valores de cores hexadecimais começam com um caractere # e 
+recebem seis caracteres de 0-9 e A-F. O primeiro par de 
+caracteres representa vermelho, o segundo par representa verde, 
+e o terceiro par representa azul. Por exemplo, #4B5320. */
+
+/* primeira cor */
+.red {
+    background: linear-gradient(180deg, rgb(5, 5, 5) 5%, rgb(0, 255, 0) 50%, rgb(5, 5, 5) 95%);
+    box-shadow: 0 0 20px 0 green;
+    /*é necessário a etapa abaixo 
+    para que ele apareça na tela, definindo o tamanho!*/
+}
+/* segunda cor */
+.green {
+    background: linear-gradient(180deg, rgb(5, 5, 5) 5%, rgb(0, 0, 255) 50%, rgb(5, 5, 5) 95%);
+    box-shadow: 0 0 20px 0 blue;
+}
+/* terceira cor */
+.blue {
+    background: linear-gradient(180deg, rgb(5, 5, 5) 5%, rgb(255, 127, 0) 50%, rgb(5, 5, 5) 95%);
+    box-shadow: 0 0 20px 0 orange
+}
+
+/*Fundo das 3 cores*/
+.container {
+    background: linear-gradient(90deg, rgb(50, 50, 50) 5%, rgb(0, 0, 0) 50%, rgb(50, 50, 50) 100%);
+    padding: 10px 0;
+}
+
+/* layout rodape */
+.rodape {
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, rgb(25, 25, 25) 5%, rgb(0, 0, 0) 50%, rgb(25, 25, 25) 100%);
+    font-size: 25px;
+    padding: auto;
+}
+
+a {
+    transition: 0.5s;
+
+}
+/* quando passar o mouse no link */
+a:visited {
+    color: rgb(0, 100, 255);
+}
+/* ele ficara assim */
+a:hover {
+    color: white;
+}
+/* apos o clique ficara: */
+a:active {
+    color: rgb(15, 15, 15);
+    transition: 0.1s;
+}
